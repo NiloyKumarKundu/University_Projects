@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="390.0" maxWidth="640.0" prefHeight="390.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Congrats">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="390.0" prefWidth="309.0">
+         <children>
+            <ImageView fitHeight="356.0" fitWidth="310.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/congratulations.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="308.0" prefHeight="390.0" prefWidth="331.0">
+         <children>
+            <Label id="won" layoutX="40.0" layoutY="105.0" prefHeight="42.0" prefWidth="272.0" styleClass="won" stylesheets="@Viper.css" text="You Won The Match!!">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="89.0" layoutY="186.0" mnemonicParsing="false" onAction="#action" prefHeight="42.0" prefWidth="154.0" stylesheets="@Viper.css" text="Play Again">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

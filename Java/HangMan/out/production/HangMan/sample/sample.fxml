@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="390.0" maxWidth="640.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="640.0" stylesheets="@Viper.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="attempt" disable="true" layoutX="171.0" layoutY="304.0" mnemonicParsing="false" onAction="#action" prefHeight="29.0" prefWidth="74.0" stylesheets="@Viper.css" text="Attempt" />
+      <ImageView id="head" fx:id="head" fitHeight="73.0" fitWidth="69.0" layoutX="549.0" layoutY="137.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Happy.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="body" fitHeight="83.0" fitWidth="4.0" layoutX="582.0" layoutY="206.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/line.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftHand" fitHeight="71.0" fitWidth="18.0" layoutX="565.0" layoutY="206.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/BackwardSlash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightHand" fitHeight="72.0" fitWidth="18.0" layoutX="585.0" layoutY="205.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Forward-Slash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftLeg" fitHeight="48.0" fitWidth="18.0" layoutX="570.0" layoutY="281.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/BackwardSlash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightLeg" fitHeight="48.0" fitWidth="26.0" layoutX="585.0" layoutY="282.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Forward-Slash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stickOne" fitHeight="150.0" fitWidth="200.0" layoutX="423.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/line.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stickTwo" fitHeight="150.0" fitWidth="200.0" layoutX="423.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/line2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stickThree" fitHeight="4.0" fitWidth="160.0" layoutX="425.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/rotateLine.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="stickFour" fitHeight="48.0" fitWidth="7.0" layoutX="581.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Dori.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="firstInstruction" layoutX="27.0" layoutY="215.0" prefHeight="27.0" prefWidth="343.0" text="Please Enter The &quot;Start&quot; Button First!!">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="275.0" prefHeight="27.0" prefWidth="167.0" text="Hint: Country Name!" textFill="#ff1414" />
+      <Label fx:id="game" layoutX="198.0" layoutY="8.0" prefHeight="60.0" prefWidth="193.0" stylesheets="@Viper.css" text="HangMan!!" textFill="#15a164">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="guessingLabel" layoutX="27.0" layoutY="80.0" prefHeight="27.0" prefWidth="259.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userInput" disable="true" layoutX="27.0" layoutY="305.0" prefHeight="27.0" prefWidth="129.0" stylesheets="@Viper.css" />
+      <Label layoutX="27.0" layoutY="251.0" prefHeight="33.0" prefWidth="167.0" text="Enter your Letter">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="259.0" layoutY="304.0" mnemonicParsing="false" onAction="#playAGame" prefHeight="27.0" prefWidth="75.0" stylesheets="@Viper.css" text="Start" />
+      <Label fx:id="attemptChance" layoutX="30.0" layoutY="347.0" opacity="0.0" prefHeight="17.0" prefWidth="69.0" text="You Have" />
+      <Label fx:id="leftChance" layoutX="93.0" layoutY="346.0" prefHeight="17.0" prefWidth="13.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="guessingLabelTwo" layoutX="105.0" layoutY="347.0" opacity="0.0" prefHeight="17.0" prefWidth="105.0" text="Guesses Left!" />
+      <Label fx:id="instructions" layoutX="30.0" layoutY="114.0" opacity="0.0" text="Instructions:" textFill="#003ba3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="here" layoutX="30.0" layoutY="136.0" opacity="0.0" text="Here," />
+      <Label fx:id="vowel" layoutX="30.0" layoutY="153.0" opacity="0.0" text="&quot;X&quot; = Vowel" />
+      <Label fx:id="consonent" layoutX="30.0" layoutY="172.0" opacity="0.0" text="&quot;_&quot; = Consonent " />
+      <Label fx:id="guessingWord" layoutX="30.0" layoutY="190.0" opacity="0.0" text="Guess The Word!">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

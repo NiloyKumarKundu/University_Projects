@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="390.0" maxWidth="640.0" prefHeight="390.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameOver">
+   <children>
+      <AnchorPane prefHeight="390.0" prefWidth="256.0">
+         <children>
+            <ImageView fitHeight="367.0" fitWidth="256.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/HanmanFaield.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="256.0" prefHeight="390.0" prefWidth="385.0">
+         <children>
+            <Label id="wonTwo" layoutX="99.0" layoutY="85.0" stylesheets="@Viper.css" text="Sorry! But you lost!!">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="126.0" text="Game Over!!" textFill="#b71c1c">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Button layoutX="68.0" layoutY="253.0" mnemonicParsing="false" onAction="#checkWord" prefHeight="44.0" prefWidth="132.0" stylesheets="@Viper.css" text="Gussing Word!">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="230.0" layoutY="253.0" mnemonicParsing="false" onAction="#action" prefHeight="44.0" prefWidth="120.0" stylesheets="@Viper.css" text="Play Again!!" />
+            <Label fx:id="check" layoutX="100.0" layoutY="191.0" opacity="0.0" text="The word was:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="label" layoutX="232.0" layoutY="192.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

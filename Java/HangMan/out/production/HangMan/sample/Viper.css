@@ -1,0 +1,59 @@
+.button {
+    -fx-background-color: #cfcfcf;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #cfcfcf;
+}
+
+.button:hover {
+    -fx-background-color: #6d6d6d;
+    -fx-text-fill: white;
+}
+
+#head {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 10;
+}
+
+#text-field {
+    -fx-font-family: "Quicksand";
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+}
+
+.text-field:focused {
+    -fx-border-color: #8e8e8e, #8e8e8e;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1, 1, 1, 1, 0;
+}
+
+#label {
+    -fx-font-family: "Chalkduster";
+    -fx-font-size: 60px;
+    -fx-text-fill: #d10723;
+}
+
+.btn {
+    -fx-background-color: white;
+    -fx-font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    -fx-text-fill: black;
+}
+
+.btn:hover {
+    -fx-background-color: #d10723;
+}
+
+
+#game {
+    -fx-text-fill: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(244,39,39,1) 0%,rgba(186,50,29,1) 17%,rgba(209,39,51,1) 47%,rgba(209,39,51,1) 67%,rgba(255,33,17,1) 80%,rgba(234,37,37,1) 100%);
+    -fx-font-family: 'Marker Felt';
+    -fx-font-size: 45px;
+}
+
+.won, .wonTwo {
+    -fx-text-fill: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);;
+    -fx-font-family: "DejaVu Sans Mono";
+    -fx-font-size: 26px;
+}
