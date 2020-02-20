@@ -1,2 +1,2 @@
-# University Projects
-**In my university life what I build, all the files and projects are here!**
+# Java
+**This category contains all the projects that I made in my University Life using Java Language!**
