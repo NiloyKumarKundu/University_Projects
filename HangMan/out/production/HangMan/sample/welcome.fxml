@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="390.0" maxWidth="640.0" prefHeight="390.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.welcomeController">
+   <children>
+      <ImageView fitHeight="228.0" fitWidth="327.0" layoutX="314.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/HangmanPro.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="174.0" layoutY="20.0" prefHeight="84.0" prefWidth="330.0" stylesheets="@Viper.css" text="Welcome!">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="28.0" layoutY="244.0" mnemonicParsing="false" onAction="#action" prefHeight="39.0" prefWidth="106.0" styleClass="btn" stylesheets="@Viper.css" text="&gt; Play" />
+      <Label layoutX="27.0" layoutY="175.0" prefHeight="33.0" prefWidth="295.0" text="Press the &quot;Play&quot; button to continue!">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
