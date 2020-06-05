@@ -1,0 +1,111 @@
+.btnBack:hover {
+    -fx-opacity: 1;
+}
+
+.btnLogin {
+    -fx-background-color: #4f5b62;
+}
+
+.btnLogin:hover {
+    -fx-background-color: #62727b !important;
+    -fx-text-fill: #4db6ac;
+}
+
+.allButton {
+    -fx-background-color:  #718792;
+    -fx-background-radius: 90;
+}
+
+.allButton:hover {
+    -fx-background-color: #819ca9;
+    -fx-text-fill: #000000;
+}
+
+.txtFont {
+    -fx-text-fill: #f4f4f4;
+}
+
+.txtFont:focused {
+    -fx-border-color: transparent transparent #558b2f transparent;
+    -fx-text-fill: #f4f4f4;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(gray, 100%);
+    -fx-padding: 0px;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius: 2em;
+}
+
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 0 10 0;
+}
+
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0em;
+    -fx-padding: 0 10 0 0;
+}
+
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .decrement-arrow {
+    -fx-padding: -2;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.text-area {
+    -fx-font-family: Arial, sans-serif;
+    -fx-highlight-fill: #ffff;
+    -fx-highlight-text-fill: #fff;
+    -fx-text-fill: #ffff;
+    -fx-border-color: #000;
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area .content{
+    -fx-background-color: transparent, #263238;
+}
+
+.textField {
+    -fx-text-fill: #eeeeee;
+    -fx-font-family: Arial !important;
+}
+
+.msgBox {
+    -fx-background-color: #455a64;
+    -fx-background-radius: 70;
+    -fx-font-size: 15px;
+    -fx-text-fill: #eeeeee;
+    -fx-font-family: Arial !important;
+}
+
+
+
+/*
+    Button Font color: #004c40
+    Button Background Color: #718792
+    All Button Hover Color: #819ca9
+    Body Color: #263238
+    Text field color:  #455a64
+    Header color: #102027
+
+ */
